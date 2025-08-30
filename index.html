@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siwan Maternal Care Dashboard - Professional Analytics Solution</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Header -->
+        <header class="dashboard-header">
+            <div class="header-content">
+                <div class="header-left">
+                    <h1><i class="fas fa-heartbeat"></i> Siwan Maternal Care Dashboard</h1>
+                    <p class="subtitle">Integrated Care Coordination System</p>
+                </div>
+                <div class="header-right">
+                    <div class="last-updated">
+                        <i class="fas fa-clock"></i>
+                        <span>Last Updated: August 29, 2025</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Key Performance Indicators -->
+        <section class="kpi-section">
+            <div class="kpi-grid">
+                <div class="kpi-card primary">
+                    <div class="kpi-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="kpi-content">
+                        <h3>Total Beneficiaries</h3>
+                        <div class="kpi-value">10,294</div>
+                        <div class="kpi-change positive">
+                            <i class="fas fa-arrow-up"></i> 12% vs last month
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kpi-card success">
+                    <div class="kpi-icon">
+                        <i class="fas fa-user-nurse"></i>
+                    </div>
+                    <div class="kpi-content">
+                        <h3>Active ASHA Workers</h3>
+                        <div class="kpi-value">450</div>
+                        <div class="kpi-change positive">
+                            <i class="fas fa-check"></i> Target Achieved
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kpi-card warning">
+                    <div class="kpi-icon">
+                        <i class="fas fa-hospital"></i>
+                    </div>
+                    <div class="kpi-content">
+                        <h3>Facilities Covered</h3>
+                        <div class="kpi-value">85</div>
+                        <div class="kpi-change positive">
+                            <i class="fas fa-check-circle"></i> 100% Coverage
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kpi-card info">
+                    <div class="kpi-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="kpi-content">
+                        <h3>Program Progress</h3>
+                        <div class="kpi-value">68%</div>
+                        <div class="kpi-change positive">
+                            <i class="fas fa-arrow-up"></i> On Track
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content Grid -->
+        <div class="main-content">
+            <!-- Block Performance -->
+            <section class="dashboard-card block-performance">
+                <div class="card-header">
+                    <h2><i class="fas fa-map-marked-alt"></i> Block Performance Overview</h2>
+                    <div class="card-actions">
+                        <button class="btn-secondary">
+                            <i class="fas fa-download"></i> Export Data
+                        </button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="block-grid">
+                        <div class="block-card">
+                            <div class="block-header">
+                                <h3>Siwan Sadar</h3>
+                                <div class="performance-score excellent">
+                                    <span>85%</span>
+                                </div>
+                            </div>
+                            <div class="block-stats">
+                                <div class="stat">
+                                    <span class="stat-label">Households</span>
+                                    <span class="stat-value">4,263</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-label">Pregnant Women</span>
+                                    <span class="stat-value">890</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-label">ASHA Workers</span>
+                                    <span class="stat-value">158</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="block-card">
+                            <div class="block-header">
+                                <h3>Goriakothi</h3>
+                                <div class="performance-score good">
+                                    <span>78%</span>
+                                </div>
+                            </div>
+                            <div class="block-stats">
+                                <div class="stat">
+                                    <span class="stat-label">Households</span>
+                                    <span class="stat-value">2,831</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-label">Pregnant Women</span>
+                                    <span class="stat-value">580</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-label">ASHA Workers</span>
+                                    <span class="stat-value">130</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="block-card">
+                            <div class="block-header">
+                                <h3>Daraundha</h3>
+                                <div class="performance-score average">
+                                    <span>72%</span>
+                                </div>
+                            </div>
+                            <div class="block-stats">
+                                <div class="stat">
+                                    <span class="stat-label">Households</span>
+                                    <span class="stat-value">3,200</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-label">Pregnant Women</span>
+                                    <span class="stat-value">640</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-label">ASHA Workers</span>
+                                    <span class="stat-value">125</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Performance Metrics Chart -->
+            <section class="dashboard-card chart-section">
+                <div class="card-header">
+                    <h2><i class="fas fa-chart-bar"></i> Key Performance Metrics</h2>
+                    <div class="chart-controls">
+                        <select id="metricSelect" class="form-select">
+                            <option value="anc">ANC Coverage</option>
+                            <option value="delivery">Institutional Deliveries</option>
+                            <option value="pnc">PNC Coverage</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <canvas id="performanceChart"></canvas>
+                </div>
+            </section>
+
+            <!-- Training Progress -->
+            <section class="dashboard-card training-section">
+                <div class="card-header">
+                    <h2><i class="fas fa-graduation-cap"></i> Training Progress</h2>
+                </div>
+                <div class="card-content">
+                    <div class="training-grid">
+                        <div class="training-item">
+                            <div class="training-header">
+                                <span>ASHA Workers</span>
+                                <span class="training-percentage">68%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 68%"></div>
+                            </div>
+                            <div class="training-stats">
+                                <span>305 / 450 Trained</span>
+                            </div>
+                        </div>
+
+                        <div class="training-item">
+                            <div class="training-header">
+                                <span>ANM Staff</span>
+                                <span class="training-percentage">82%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 82%"></div>
+                            </div>
+                            <div class="training-stats">
+                                <span>29 / 35 Trained</span>
+                            </div>
+                        </div>
+
+                        <div class="training-item">
+                            <div class="training-header">
+                                <span>CHO Staff</span>
+                                <span class="training-percentage">76%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 76%"></div>
+                            </div>
+                            <div class="training-stats">
+                                <span>19 / 25 Trained</span>
+                            </div>
+                        </div>
+
+                        <div class="training-item">
+                            <div class="training-header">
+                                <span>Hospital Managers</span>
+                                <span class="training-percentage">93%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 93%"></div>
+                            </div>
+                            <div class="training-stats">
+                                <span>14 / 15 Trained</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Implementation Timeline -->
+            <section class="dashboard-card timeline-section">
+                <div class="card-header">
+                    <h2><i class="fas fa-calendar-alt"></i> Implementation Timeline</h2>
+                </div>
+                <div class="card-content">
+                    <div class="timeline">
+                        <div class="timeline-item completed">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>Planning & SOPs</h4>
+                                <p>Aug 2025</p>
+                                <div class="timeline-status">Completed</div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item active">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>Training Rollout</h4>
+                                <p>Sep-Oct 2025</p>
+                                <div class="timeline-status">In Progress</div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>Technology Deployment</h4>
+                                <p>Nov 2025</p>
+                                <div class="timeline-status">Upcoming</div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>Pilot Launch</h4>
+                                <p>Dec 2025</p>
+                                <div class="timeline-status">Planned</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Resource Utilization -->
+            <section class="dashboard-card resource-section">
+                <div class="card-header">
+                    <h2><i class="fas fa-coins"></i> Resource Utilization</h2>
+                </div>
+                <div class="card-content">
+                    <div class="resource-grid">
+                        <div class="resource-item">
+                            <div class="resource-header">
+                                <i class="fas fa-rupee-sign"></i>
+                                <span>Budget Utilization</span>
+                            </div>
+                            <div class="resource-progress">
+                                <div class="progress-circle">
+                                    <span>68%</span>
+                                </div>
+                                <div class="resource-details">
+                                    <p>₹50.7L / ₹74.5L</p>
+                                    <small>Utilized / Allocated</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="resource-item">
+                            <div class="resource-header">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>Device Distribution</span>
+                            </div>
+                            <div class="resource-progress">
+                                <div class="progress-circle">
+                                    <span>85%</span>
+                                </div>
+                                <div class="resource-details">
+                                    <p>265 / 312</p>
+                                    <small>Distributed / Total</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quick Stats -->
+            <section class="dashboard-card quick-stats">
+                <div class="card-header">
+                    <h2><i class="fas fa-tachometer-alt"></i> Key Indicators</h2>
+                </div>
+                <div class="card-content">
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-icon anc">
+                                <i class="fas fa-calendar-check"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-value">78%</div>
+                                <div class="stat-label">4 ANC Coverage</div>
+                                <div class="stat-target">Target: 90%</div>
+                            </div>
+                        </div>
+
+                        <div class="stat-item">
+                            <div class="stat-icon delivery">
+                                <i class="fas fa-baby"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-value">85%</div>
+                                <div class="stat-label">Institutional Delivery</div>
+                                <div class="stat-target">Target: 95%</div>
+                            </div>
+                        </div>
+
+                        <div class="stat-item">
+                            <div class="stat-icon hrp">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-value">92%</div>
+                                <div class="stat-label">HRP Identification</div>
+                                <div class="stat-target">Target: 100%</div>
+                            </div>
+                        </div>
+
+                        <div class="stat-item">
+                            <div class="stat-icon ambulance">
+                                <i class="fas fa-ambulance"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-value">76%</div>
+                                <div class="stat-label">Ambulance Usage</div>
+                                <div class="stat-target">Target: 90%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer class="dashboard-footer">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p>&copy; 2025 Siwan Maternal Care Pilot. Professional Analytics Solution.</p>
+                </div>
+                <div class="footer-right">
+                    <p>Powered by Advanced Data Analytics & Visualization Platform</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
